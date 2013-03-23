@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block main %}
+	{% for x in sections %}{# easy way to extract section we want #}
+		{% if active|lower == x.title|lower %}
+			<!-- section start -->
+			<p class="lead">
+				<h1>{{ x.title }}</h1>
+			{% if x.muted %}
+				<h2 class="featurette-heading"><span class="muted">{{ x.muted }}</span></h2>
+			{% endif %}
+				<br />
+				{{ x.html|safe }}
+			</p>
+		{% endif %}
+	{% endfor %}
+{% endblock main %}
+

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block main %}
+			<!-- main hero unit -->
+			<div class="hero-unit">
+				<h1>{{ hero.title }}</h1>
+				<p>{{ hero.text|safe }}</p>
+				<p><a class="btn btn-primary btn-large" href="{{ hero.url }}">Learn more &raquo;</a></p>
+			</div>
+
+			<!-- row of columns -->
+			<div class="row">
+				{% for x in headings %}
+				<div class="span4">
+					<!--<img class="img-polaroid" data-src="holder.js/123x96" alt="TODO">-->
+					<h2>{{ x.title }}</h2>
+					<p>{{ x.text|safe }}</p>
+					<p><a class="btn" href="{{ x.url }}">More information &raquo;</a></p>
+				</div>
+				{% endfor %}
+			</div>
+{% endblock main %}
+

@@ -1,0 +1,4 @@
+*.pyc
+old/
+# django secret key
+secret_key.py

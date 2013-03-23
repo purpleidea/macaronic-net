@@ -1,0 +1,11 @@
+Hello!
+
+This is the "web" source code for http://macaronic.net/
+It is an excuse to try out twitter-bootstrap and google-appengine.
+Please feel free to send me patches, or point out errors and improvements.
+All my code is AGPLv3+, if you feel like using it as a base for your own site.
+Some included upstream code is under different licenses.
+Happy hacking,
+
+James
+
