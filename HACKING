@@ -1,0 +1,13 @@
+my HACKING notes...
+
+To run the development server:
+
+	./google_appengine/dev_appserver.py macaronic-net/
+
+To push a new version to appengine:
+
+	./google_appengine/appcfg.py update macaronic-net/
+
+Where google_appengine/ is the google-appengine sdk directory from google and
+macaronic-net/ is the project directory of this website.
+
